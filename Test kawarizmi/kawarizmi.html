@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clément</title>
+    <link rel="stylesheet" href="kawarizmi.css">
+    <link rel="icon" type="image" href="img/arrow.png">
+    <script src="kawarizmi.js"></script>
+</head>
+
+<body>
+    <h1>Formulaire kawarizmi</h1>
+
+        <form action="kawarizmi.js" onkeyup="ComptageChar(), rediff(), inverser(), estLePlusPresent()">
+            <label for="chaineChar">Renseignez un texte :</label>
+                <input type="text" id="chaineChar"><br>
+            <label for="nbchar">nombre de caractères</label>
+                <input type="number" id="nbchar" disabled><br>
+            <label for="plusPresent">caractère le plus présent</label>
+                <input type="text" id="plusPresent" disabled><br>
+            <label for="redifChar">votre chaine de caractère</label>
+                <input type="text" id="redifChar" disabled><br>
+            <label for="texteInv">votre chaine à l'envers:</label>
+                <input type="text" id="texteInv" disabled><br>
+        </form>
+
+        <form action="kawarizmi.js" onchange="testDate()">
+            <label for="champDate">Renseignez une date :</label>
+            <input type="date" id="champDate"><br>
+            <label for="repDate">la réponse</label>
+            <input type="text" id="repDate" disabled>
+        </form>
+</body>
+</html>
